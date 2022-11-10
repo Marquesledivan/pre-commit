@@ -1,0 +1,17 @@
+# This configuration file allows our pre-commit hooks to be used with pre-commit: http://pre-commit.com/
+
+- id: terraform-fmt
+  name: Terraform fmt
+  description: Rewrites all Terraform configuration files to a canonical format
+  entry: hooks/terraform-fmt.sh
+  language: script
+  files: \.tf$
+  exclude: \.+.terraform\/.*$
+  require_serial: true
+
+- id: pipeline-generator
+  name: pipeline-generator
+  description: Generate ci config automatically.
+  entry: hooks/pipeline-generator.sh
+  language: script
+  pass_filenames: false
