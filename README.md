@@ -11,8 +11,8 @@ In each of your repos, add a file called `.pre-commit-config.yaml` with the foll
 
 ```yaml
 repos:
-  - repo: https://github.com/craftech-io/pre-commit
-    rev: <VERSION> # Get the latest from: https://github.com/craftech-io/pre-commit/releases
+  - repo: https://github.com/Marquesledivan/pre-commit
+    rev: <VERSION> # Get the latest from: https://github.com/Marquesledivan/pre-commit/releases
     hooks:
       - id: terraform-fmt
 ```
