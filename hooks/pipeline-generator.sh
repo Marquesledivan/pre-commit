@@ -20,7 +20,7 @@ if [ -z "$PGEN_OUTPUT_FILE" ]; then echo "set \$PGEN_OUTPUT_FILE variable." && e
 if ! command -v pipeline-generator &> /dev/null
 then
     echo "installing pipeline-generator"
-    pip install -U git+https://github.com/Marquesledivan/pipeline-generator.git@v0.0.3
+    pip install -U git+https://github.com/Marquesledivan/pipeline-generator.git@v0.0.4
 fi
 
 # Clean cache.
