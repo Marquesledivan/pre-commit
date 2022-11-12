@@ -22,7 +22,7 @@ if [ -z "$ENABLE_ASDF" ]; then echo "set \$ENABLE_ASDF variable." && exit 1; fi
 if ! command -v pipeline-generator &> /dev/null
 then
     echo "installing pipeline-generator"
-    pip install -U git+https://github.com/Marquesledivan/pipeline-generator.git@v0.0.27
+    pip install -U git+https://github.com/Marquesledivan/pipeline-generator.git@v0.0.28
 fi
 
 # Clean cache.
